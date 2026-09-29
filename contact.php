@@ -169,7 +169,7 @@ function e(string $value): string
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="de">
 
 <head>
 
