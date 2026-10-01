@@ -4847,6 +4847,7 @@ span {
 }
 .feature-value-items .value-icon-items .icon {
   width: 90px;
+  max-width: 90px;
   height: 90px;
   line-height: 100px;
   text-align: center;
