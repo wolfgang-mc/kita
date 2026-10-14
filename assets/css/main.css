@@ -8,12 +8,12 @@ Version: 1.0.0
 /*CSS Table Of Content Ends Here*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");*/
 :root {
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #f3d488;
+  --theme: #e5bd65;
   --theme2: #5d9fcb;
   --theme3: #2d5e8f;
   --header: #28567f;
@@ -9596,7 +9596,7 @@ span {
 .hero-1 .hero-content h5 {
   margin-bottom: 15px;
   color: var(--theme);
-  font-family: "Pangolin";
+  font-family: "Quicksand";
   font-weight: 500;
   position: relative;
   display: inline-block;
@@ -9828,7 +9828,7 @@ span {
 .hero-2 .hero-content h5 {
   margin-bottom: 15px;
   color: var(--theme);
-  font-family: "Pangolin";
+  font-family: "Quicksand";
   font-weight: 500;
   position: relative;
   display: inline-block;
@@ -10086,7 +10086,7 @@ span {
 .hero-3 .hero-content h5 {
   margin-bottom: 20px;
   position: relative;
-  font-family: Pangolin;
+  font-family: "Quicksand";
   font-weight: 500;
   color: var(--theme);
 }
@@ -10228,7 +10228,7 @@ span {
 .hero-4 .hero-content h5 {
   margin-bottom: 15px;
   color: var(--theme);
-  font-family: "Pangolin";
+  font-family: "Quicksand";
   font-weight: 500;
   position: relative;
   display: inline-block;
@@ -15634,7 +15634,7 @@ input.main-search-input::placeholder {
   font-weight: 400;
   text-transform: none;
   font-size: 20px;
-  font-family: "Pangolin";
+  font-family: "Quicksand";
 }
 .section-title.style-2 span {
   color: var(--theme3);
@@ -17831,7 +17831,7 @@ input.main-search-input::placeholder {
   border-radius: 22px;
   padding: 20px 24px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr auto;
+  grid-template-columns: 1fr 24px 1fr 24px 1fr;
   gap: 16px;
   align-items: center;
 }
