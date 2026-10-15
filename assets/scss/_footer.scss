@@ -472,7 +472,7 @@
             color: $header-color;
 
             a {
-               color: $theme-color;
+               color: color-mix(in srgb, $theme-color 80%, black);
             }
         }
         

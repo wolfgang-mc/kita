@@ -13,7 +13,7 @@ Version: 1.0.0
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #e5bd65;
+  --theme: #f3d488;
   --theme2: #5d9fcb;
   --theme3: #2d5e8f;
   --header: #28567f;
@@ -7135,7 +7135,7 @@ span {
   color: var(--header);
 }
 .footer-bottom .footer-wrapper p a {
-  color: var(--theme);
+  color: color-mix(in srgb, var(--theme) 80%, black);
 }
 .footer-bottom .footer-wrapper .footer-menu {
   display: flex;
@@ -13502,12 +13502,13 @@ input.main-search-input::placeholder {
 }
 
 .program-box-items-2 {
-  padding: 50px 30px 40px;
+  padding: 50px 90px 40px;
   position: relative;
   z-index: 9;
   max-width: 420px;
   text-align: center;
   margin: 30px auto;
+  min-height: 210px;
 }
 .program-box-items-2 .program-bg {
   position: absolute;
@@ -13515,10 +13516,10 @@ input.main-search-input::placeholder {
   left: 0;
   background-color: var(--theme2);
   transition: all 500ms ease;
-  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 288"><path fill-rule="evenodd" clip-rule="evenodd" d="M131.352 0.968405C166.359 0.739595 212.216 -6.12903 237.965 20.2925C264.719 47.745 268.813 92.0436 269.889 132.547C270.998 174.303 264.054 235.303 237.965 265.31C211.488 295.761 169.371 285.444 131.352 287.293C91.3384 289.24 47.0661 289.453 20.2754 256.287C-5.7936 224.014 -0.425215 175.827 2.64371 132.547C5.39126 93.7981 -4.50211 53.0434 20.2754 25.6771C44.9629 -1.5898 96.5877 1.19563 131.352 0.968405Z" /></svg>');
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.125 270"><path fill-rule="evenodd" clip-rule="evenodd" transform="scale(0.9375)" d="M131.352 0.968405C166.359 0.739595 212.216 -6.12903 237.965 20.2925C264.719 47.745 268.813 92.0436 269.889 132.547C270.998 174.303 264.054 235.303 237.965 265.31C211.488 295.761 169.371 285.444 131.352 287.293C91.3384 289.24 47.0661 289.453 20.2754 256.287C-5.7936 224.014 -0.425215 175.827 2.64371 132.547C5.39126 93.7981 -4.50211 53.0434 20.2754 25.6771C44.9629 -1.5898 96.5877 1.19563 131.352 0.968405Z" /></svg>');
   mask-repeat: no-repeat;
   mask-position: center center;
-  mask-size: cover;
+  mask-size: contain;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -15628,7 +15629,7 @@ input.main-search-input::placeholder {
   }
 }
 .section-title span {
-  color: var(--theme);
+  color: color-mix(in srgb, var(--theme) 80%, black);
   margin-bottom: 10px;
   display: inline-block;
   font-weight: 400;
@@ -15998,6 +15999,7 @@ input.main-search-input::placeholder {
   text-align: center;
   position: relative;
   z-index: 9;
+  min-height: 566px;
 }
 .team-box-items .bg-shape-1 {
   position: absolute;
@@ -17817,6 +17819,10 @@ input.main-search-input::placeholder {
   margin-bottom: 14px;
 }
 
+.home-groups-teaser {
+  margin-bottom: 20px;
+}
+
 .home-groups-teaser .program-box-items-2 {
   height: 100%;
 }
@@ -17831,9 +17837,10 @@ input.main-search-input::placeholder {
   border-radius: 22px;
   padding: 20px 24px;
   display: grid;
-  grid-template-columns: 1fr 24px 1fr 24px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
   align-items: center;
+  text-align: center;
 }
 
 .home-availability-strip .availability-wrap .theme-btn {
